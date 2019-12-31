@@ -748,6 +748,7 @@ func ExampleFpdf_HTMLBasicNew() {
 	pdf.SetFont("Helvetica", "", 20)
 	_, lineHt := pdf.GetFontSize()
 	pdf.Write(lineHt, "To find out what's new in this tutorial, click ")
+	pdf.Write(lineHt, "To find out what's new in this tutorial, click Auto Line Break, click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,click Auto Line Break,")
 	pdf.SetFont("", "U", 0)
 	link := pdf.AddLink()
 	pdf.WriteLinkID(lineHt, "here", link)
@@ -763,8 +764,8 @@ func ExampleFpdf_HTMLBasicNew() {
 		`<i>italic</i>, <u>underlined</u>, or <b><i><u>all at once</u></i></b>!<br><br>` +
 		`<center>You can also center text.</center>` +
 		`<right>Or align it to the right.</right>` +
-		`You can also insert links on text, such as ` +
-		`<a href="http://www.fpdf.org">www.fpdf.org</a>, or on an image: click on the logo.`
+		`You can also insert links on text, such as 中国` +
+		`<a href="http://www.fpdf.org">www.fpdf.org</a>, or on an image: click on the logo.  wwwq wwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwq wwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwqwwwq wwwqwwwq wwwqwwwq`
 	html := pdf.HTMLBasicNew()
 	html.Write(lineHt, htmlStr)
 	fileStr := example.Filename("Fpdf_HTMLBasicNew")
