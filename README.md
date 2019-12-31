@@ -258,3 +258,5 @@ times, and for file attachments and annotations.
 
   - Remove all legacy code page font support; use UTF-8 exclusively
   - Improve test coverage as reported by the coverage tool.
+  - Support Table for HTML.
+  - Support CSS.
