@@ -1,5 +1,7 @@
 # GoFPDF document generator
 
+
+[![Build Status](https://travis-ci.org/wangwanqiang/gofpdf.svg?branch=master)](https://travis-ci.org/wangwanqiang/gofpdf.svg?branch=master)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE)
 [![Report](https://goreportcard.com/badge/github.com/jung-kurt/gofpdf)](https://goreportcard.com/report/github.com/jung-kurt/gofpdf)
